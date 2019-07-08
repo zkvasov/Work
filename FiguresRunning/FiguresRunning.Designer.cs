@@ -43,7 +43,6 @@ namespace FiguresRunning
             this.buttonPlus = new System.Windows.Forms.Button();
             this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
             this.btStopGoFigure = new System.Windows.Forms.Button();
-            this.textBoxTimer = new System.Windows.Forms.TextBox();
             this.buttonCircle = new System.Windows.Forms.Button();
             this.buttonRectangle = new System.Windows.Forms.Button();
             this.buttonTriangle = new System.Windows.Forms.Button();
@@ -113,7 +112,6 @@ namespace FiguresRunning
             this.panelCreating.Controls.Add(this.buttonPlus);
             this.panelCreating.Controls.Add(this.comboBoxLanguage);
             this.panelCreating.Controls.Add(this.btStopGoFigure);
-            this.panelCreating.Controls.Add(this.textBoxTimer);
             this.panelCreating.Controls.Add(this.buttonCircle);
             this.panelCreating.Controls.Add(this.buttonRectangle);
             this.panelCreating.Controls.Add(this.buttonTriangle);
@@ -164,11 +162,6 @@ namespace FiguresRunning
             this.btStopGoFigure.UseVisualStyleBackColor = true;
             this.btStopGoFigure.Click += new System.EventHandler(this.btStopGoFigure_Click);
             // 
-            // textBoxTimer
-            // 
-            resources.ApplyResources(this.textBoxTimer, "textBoxTimer");
-            this.textBoxTimer.Name = "textBoxTimer";
-            // 
             // buttonCircle
             // 
             resources.ApplyResources(this.buttonCircle, "buttonCircle");
@@ -204,6 +197,7 @@ namespace FiguresRunning
             this.saveToolStripMenuItem,
             this.openToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Text = MyStrings.File;
             // 
             // saveToolStripMenuItem
             // 
@@ -213,23 +207,27 @@ namespace FiguresRunning
             this.saveInxmlToolStripMenuItem,
             this.saveInToolStripMenuItem});
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Text = MyStrings.Save;
             // 
             // saveInBinToolStripMenuItem
             // 
             resources.ApplyResources(this.saveInBinToolStripMenuItem, "saveInBinToolStripMenuItem");
             this.saveInBinToolStripMenuItem.Name = "saveInBinToolStripMenuItem";
+            this.saveInBinToolStripMenuItem.Text = MyStrings.SaveBIN;
             this.saveInBinToolStripMenuItem.Click += new System.EventHandler(this.saveInBinToolStripMenuItem_Click);
             // 
             // saveInxmlToolStripMenuItem
             // 
             resources.ApplyResources(this.saveInxmlToolStripMenuItem, "saveInxmlToolStripMenuItem");
             this.saveInxmlToolStripMenuItem.Name = "saveInxmlToolStripMenuItem";
+            this.saveInxmlToolStripMenuItem.Text = MyStrings.SaveXML;
             this.saveInxmlToolStripMenuItem.Click += new System.EventHandler(this.saveInxmlToolStripMenuItem_Click);
             // 
             // saveInToolStripMenuItem
             // 
             resources.ApplyResources(this.saveInToolStripMenuItem, "saveInToolStripMenuItem");
             this.saveInToolStripMenuItem.Name = "saveInToolStripMenuItem";
+            this.saveInToolStripMenuItem.Text = MyStrings.SaveJSON;
             this.saveInToolStripMenuItem.Click += new System.EventHandler(this.saveJSONToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
@@ -240,29 +238,33 @@ namespace FiguresRunning
             this.openxmlToolStripMenuItem,
             this.openjsonToolStripMenuItem});
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Text = MyStrings.Open;
             // 
             // openbinToolStripMenuItem
             // 
             resources.ApplyResources(this.openbinToolStripMenuItem, "openbinToolStripMenuItem");
             this.openbinToolStripMenuItem.Name = "openbinToolStripMenuItem";
+            this.openbinToolStripMenuItem.Text = MyStrings.OpenBIN;
             this.openbinToolStripMenuItem.Click += new System.EventHandler(this.openbinToolStripMenuItem_Click);
             // 
             // openxmlToolStripMenuItem
             // 
             resources.ApplyResources(this.openxmlToolStripMenuItem, "openxmlToolStripMenuItem");
             this.openxmlToolStripMenuItem.Name = "openxmlToolStripMenuItem";
+            this.openxmlToolStripMenuItem.Text = MyStrings.OpenXML;
             this.openxmlToolStripMenuItem.Click += new System.EventHandler(this.openxmlToolStripMenuItem_Click);
             // 
             // openjsonToolStripMenuItem
             // 
             resources.ApplyResources(this.openjsonToolStripMenuItem, "openjsonToolStripMenuItem");
             this.openjsonToolStripMenuItem.Name = "openjsonToolStripMenuItem";
+            this.openjsonToolStripMenuItem.Text = MyStrings.OpenJSON;
             this.openjsonToolStripMenuItem.Click += new System.EventHandler(this.openjsonToolStripMenuItem_Click);
             // 
             // timer
             // 
             this.timer.Enabled = true;
-            this.timer.Interval = 500;
+            this.timer.Interval = 300;
             this.timer.Tick += new System.EventHandler(this.timerMain_Tick);
             // 
             // FiguresRunning
@@ -298,7 +300,6 @@ namespace FiguresRunning
         private System.Windows.Forms.TreeView treeViewFigures;
         private System.Windows.Forms.PictureBox pictureBoxMain;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.TextBox textBoxTimer;
         private System.Windows.Forms.Button btStopGoFigure;
         private System.Windows.Forms.ComboBox comboBoxLanguage;
         private System.Windows.Forms.MenuStrip menuStrip1;

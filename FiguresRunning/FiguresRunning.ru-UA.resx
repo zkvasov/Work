@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelNothing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="labelNothing.Text" xml:space="preserve">
+    <value>Столкновение на: </value>
+  </data>
+  <data name="buttonMinus.Text" xml:space="preserve">
+    <value>Минус</value>
+  </data>
+  <data name="buttonPlus.Text" xml:space="preserve">
+    <value>Плюс</value>
+  </data>
   <data name="btStopGoFigure.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
   </data>
@@ -139,26 +151,50 @@
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>Файл</value>
   </data>
+  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="saveToolStripMenuItem.Text" xml:space="preserve">
     <value>Сохранить</value>
+  </data>
+  <data name="saveInBinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="saveInBinToolStripMenuItem.Text" xml:space="preserve">
     <value>Сохранить .bin</value>
   </data>
+  <data name="saveInxmlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="saveInxmlToolStripMenuItem.Text" xml:space="preserve">
     <value>Сохранить .xml</value>
+  </data>
+  <data name="saveInToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="saveInToolStripMenuItem.Text" xml:space="preserve">
     <value>Сохранить .json</value>
   </data>
+  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="openToolStripMenuItem.Text" xml:space="preserve">
     <value>Открыть</value>
+  </data>
+  <data name="openbinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
   </data>
   <data name="openbinToolStripMenuItem.Text" xml:space="preserve">
     <value>Открыть .bin</value>
   </data>
+  <data name="openxmlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
   <data name="openxmlToolStripMenuItem.Text" xml:space="preserve">
     <value>Открыть .xml</value>
+  </data>
+  <data name="openjsonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
   </data>
   <data name="openjsonToolStripMenuItem.Text" xml:space="preserve">
     <value>Открыть .json</value>

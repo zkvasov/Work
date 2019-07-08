@@ -17,10 +17,6 @@ namespace FiguresRunning
         //public System.Drawing.Pen figPen = new System.Drawing.Pen(System.Drawing.Color.Orange);
         [DataMember]
         public override string Name { get; set; }
-        //[DataMember]
-        //public override int PosX { get; set; }
-        //[DataMember]
-        //public override int PosY { get; set; }
         [DataMember]
         public int Width { get; set; }                //надо ли???
         [DataMember]
@@ -43,22 +39,10 @@ namespace FiguresRunning
         //    Width = width;
         //    Height = height;
         //}
+
         public override void Draw(Graphics g)
         {
-            
-           // System.Drawing.Graphics g;
-            //g = e.Graphics;
-            //System.Drawing.Pen myPen = new System.Drawing.Pen(System.Drawing.Color.Orange);
             g.DrawRectangle(new Pen(Color.Orange), new Rectangle(PosX, PosY, Width, Height));
-            //myPen.Dispose();
-           // g.Dispose();
         }
-
-        //public override TreeNode AddNode(List<Figure> allFigures, int countFigure)
-        //{
-        //    TreeNode figureNode = new TreeNode(MyStrings.Rectangle + countFigure.ToString());
-        //    figureNode.Tag = allFigures[countFigure - 1];
-        //    return figureNode;
-        //}
     }
 }

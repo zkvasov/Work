@@ -70,6 +70,15 @@ namespace FiguresRunning {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to File.
+        /// </summary>
+        internal static string File {
+            get {
+                return ResourceManager.GetString("File", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Go.
         /// </summary>
         internal static string Go {
@@ -79,11 +88,83 @@ namespace FiguresRunning {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open.
+        /// </summary>
+        internal static string Open {
+            get {
+                return ResourceManager.GetString("Open", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open .bin.
+        /// </summary>
+        internal static string OpenBIN {
+            get {
+                return ResourceManager.GetString("OpenBIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open .json.
+        /// </summary>
+        internal static string OpenJSON {
+            get {
+                return ResourceManager.GetString("OpenJSON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open .xml.
+        /// </summary>
+        internal static string OpenXML {
+            get {
+                return ResourceManager.GetString("OpenXML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rectangle .
         /// </summary>
         internal static string Rectangle {
             get {
                 return ResourceManager.GetString("Rectangle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save in .bin.
+        /// </summary>
+        internal static string SaveBIN {
+            get {
+                return ResourceManager.GetString("SaveBIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save in .json.
+        /// </summary>
+        internal static string SaveJSON {
+            get {
+                return ResourceManager.GetString("SaveJSON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save in .xml.
+        /// </summary>
+        internal static string SaveXML {
+            get {
+                return ResourceManager.GetString("SaveXML", resourceCulture);
             }
         }
         

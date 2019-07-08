@@ -13,6 +13,7 @@ using System.Xml.Serialization;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using RandomForFigures;
+using System.Threading;
 
 namespace FiguresRunning
 {
@@ -20,46 +21,81 @@ namespace FiguresRunning
     public partial class FiguresRunning : Form
     {
         //list of all figures
-        List<Figure> allFigures = new List<Figure>();
-        int countFigure = 0;
+        private List<Figure> allFigures = new List<Figure>();
+        private int countFigure = 0;
 
         RandomHelper rand = new RandomHelper();
         private object lockFigures = new object();
+        Thread threadMoving;
 
         public FiguresRunning()
         {
-
             if (!String.IsNullOrEmpty(Properties.Settings.Default.Language))
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
                 System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
             }
             InitializeComponent();
+            threadMoving = new Thread(new ThreadStart(MoveFigures));
+            threadMoving.Start();
         }
-
 
         private Point GetMaxPointField()                              
         {
             return new Point(this.pictureBoxMain.Width - 1, this.pictureBoxMain.Height - 1);
         }
 
+        private void MoveFigures()
+        {
+            while (!pictureBoxMain.IsDisposed)
+            {
+                Action action = () => 
+                {
+                    Point Pmax = GetMaxPointField();
+                    lock (lockFigures)
+                    {
+                        foreach (Figure f in allFigures)
+                        {
+                            try
+                            {
+                                f.Move(Pmax);
+                            }
+                            catch (OutOfFieldException ex)
+                            {
+                                f.ReturnToField(Pmax);
+                                LogHelper.WriteLog(String.Format("{0} Figure: {1}; Coordinates: {2}", ex.Message, ex.Figure, ex.Point));
+                            }
+                        }
+
+
+                    }
+                };
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(action);
+                }
+                else
+                {
+                    action();
+                }
+
+                Thread.Sleep(300);
+            }
+        }
+
         private void pbMain_Paint(object sender, PaintEventArgs e)
         {
             Point Pmax = GetMaxPointField();
-            foreach (Figure f in allFigures)
+
+            lock (lockFigures)
             {
-                try
+                foreach (Figure f in allFigures)
                 {
-                    f.Move(Pmax);
-                }
-                catch(OutOfFieldException ex)
-                {
-                    f.ReturnToField(Pmax);
-                    LogHelper.WriteLog(String.Format("{0} Figure: {1}; Coordinates: {2}", ex.Message, ex.Figure, ex.Point));
+                    f.Draw(e.Graphics);
                 }
 
-                f.Draw(e.Graphics);
             }
+
             Invalidate();
         }
 
@@ -67,7 +103,12 @@ namespace FiguresRunning
         {
             Point Pmax = GetMaxPointField();
             Point pos = rand.GetRandomPosition(Pmax);
-            this.allFigures.Add(new Triangle(pos.X, pos.Y, rand));
+
+            lock (lockFigures)
+            {
+                this.allFigures.Add(new Triangle(pos.X, pos.Y, rand));
+            }
+
             countFigure++;
             this.treeViewFigures.Nodes.Add(CreateFigureNode());   //add node figure
         }
@@ -75,7 +116,11 @@ namespace FiguresRunning
         {
             Point Pmax = GetMaxPointField();
             Point pos = rand.GetRandomPosition(Pmax);
-            this.allFigures.Add(new Rect(pos.X, pos.Y, rand));
+
+            lock (lockFigures)
+            {
+                this.allFigures.Add(new Rect(pos.X, pos.Y, rand));
+            }
             countFigure++;
             this.treeViewFigures.Nodes.Add(CreateFigureNode());   //add node figure
         }
@@ -83,7 +128,11 @@ namespace FiguresRunning
         {
             Point Pmax = GetMaxPointField();
             Point pos = rand.GetRandomPosition(Pmax);
-            this.allFigures.Add(new Circle(pos.X, pos.Y, rand));
+
+            lock (lockFigures)
+            {
+                this.allFigures.Add(new Circle(pos.X, pos.Y, rand));
+            }
             countFigure++;
             this.treeViewFigures.Nodes.Add(CreateFigureNode());   //add node figure
         }
@@ -97,20 +146,10 @@ namespace FiguresRunning
             return figureNode;
         }
 
-        int duration = 0;
         private void timerMain_Tick(object sender, EventArgs e)
         {
-            duration++;
-            this.textBoxTimer.Text = duration.ToString();
 
             this.pictureBoxMain.Refresh();
-            //Point Pmax = GetMaxPointField();
-            //foreach (Figure f in allFigures)
-            //{
-            //    f.Move(Pmax);
-            //}
-           // Invalidate();
-            
         }
 
 
@@ -172,10 +211,17 @@ namespace FiguresRunning
 
         }
 
+        private void StopThread()
+        {
+            threadMoving.Abort();
+            threadMoving.Join(500);
+        }
+
         private void FiguresRunning_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.Language = comboBoxLanguage.SelectedValue.ToString();
             Properties.Settings.Default.Save();
+            StopThread();
         }
 
         private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)          
@@ -368,9 +414,7 @@ namespace FiguresRunning
             {
                 CheckTriangle(figure, args);
             }
-
-
-            
+     
         }
 
         private void CheckCircle(Figure currFigure, MoveEventArgs args)
@@ -386,10 +430,6 @@ namespace FiguresRunning
                     System.Media.SystemSounds.Beep.Play();  //play sound
                     labelX.Text = args.BumpPoint.X.ToString();
                     labelY.Text = args.BumpPoint.Y.ToString();
-                    //labelX.Text = circle.PosX.ToString();
-                    //labelY.Text = circle.PosY.ToString();
-
-                    // beepList.Add(fig.ID);
                 }
             }
         }
@@ -408,10 +448,6 @@ namespace FiguresRunning
                     System.Media.SystemSounds.Beep.Play();  //play sound
                     labelX.Text = args.BumpPoint.X.ToString();
                     labelY.Text = args.BumpPoint.Y.ToString();
-                    //labelX.Text = rect.PosX.ToString();
-                    //labelY.Text = rect.PosY.ToString();
-
-                    // beepList.Add(fig.ID);
                 }
             }
         }
@@ -431,10 +467,6 @@ namespace FiguresRunning
                     System.Media.SystemSounds.Beep.Play();  //play sound
                     labelX.Text = args.BumpPoint.X.ToString();
                     labelY.Text = args.BumpPoint.Y.ToString();
-                    //labelX.Text = triangle.PosX.ToString();
-                    //labelY.Text = triangle.PosY.ToString();
-
-                    // beepList.Add(fig.ID);
                 }
             }
             

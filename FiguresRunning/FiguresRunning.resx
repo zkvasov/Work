@@ -121,8 +121,8 @@
   <data name="openxmlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 22</value>
   </data>
-  <data name="&gt;&gt;btStopGoFigure.Name" xml:space="preserve">
-    <value>btStopGoFigure</value>
+  <data name="&gt;&gt;pictureBoxMain.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btStopGoFigure.Location" type="System.Drawing.Point, System.Drawing">
     <value>546, 3</value>
@@ -130,9 +130,6 @@
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelCreating.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Figures Running</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonTriangle.TabIndex" type="System.Int32, mscorlib">
@@ -153,17 +150,14 @@
   <data name="&gt;&gt;saveInxmlToolStripMenuItem.Name" xml:space="preserve">
     <value>saveInxmlToolStripMenuItem</value>
   </data>
-  <data name="treeViewFigures.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
   </data>
-  <data name="&gt;&gt;buttonPlus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;textBoxTimer.Name" xml:space="preserve">
-    <value>textBoxTimer</value>
-  </data>
-  <data name="openjsonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 22</value>
+  <data name="labelX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 13</value>
   </data>
   <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -171,26 +165,14 @@
   <data name="btStopGoFigure.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="textBoxTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 59</value>
-  </data>
   <data name="&gt;&gt;openbinToolStripMenuItem.Name" xml:space="preserve">
     <value>openbinToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;saveInBinToolStripMenuItem.Name" xml:space="preserve">
-    <value>saveInBinToolStripMenuItem</value>
   </data>
   <data name="labelX.Text" xml:space="preserve">
     <value>X:</value>
   </data>
-  <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonMinus.Text" xml:space="preserve">
-    <value>Minus</value>
-  </data>
-  <data name="textBoxTimer.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>896, 24</value>
   </data>
   <data name="&gt;&gt;buttonCircle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -198,26 +180,23 @@
   <data name="pictureBoxMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="&gt;&gt;labelY.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="panelCreating.Size" type="System.Drawing.Size, System.Drawing">
     <value>900, 88</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>900, 450</value>
+  <data name="openbinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 22</value>
   </data>
-  <data name="saveInxmlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
-  </data>
-  <data name="pictureBoxMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>748, 358</value>
-  </data>
-  <data name="&gt;&gt;labelY.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;comboBoxLanguage.Parent" xml:space="preserve">
     <value>panelCreating</value>
   </data>
-  <data name="comboBoxLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Figures Running</value>
   </data>
   <data name="openxmlToolStripMenuItem.Text" xml:space="preserve">
     <value>Open .xml</value>
@@ -264,6 +243,9 @@
   <data name="&gt;&gt;comboBoxLanguage.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;labelX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="buttonPlus.Text" xml:space="preserve">
     <value>Plus</value>
   </data>
@@ -279,11 +261,11 @@
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>900, 362</value>
   </data>
-  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
-    <value>splitContainer1</value>
+  <data name="openjsonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 22</value>
   </data>
-  <data name="&gt;&gt;buttonMinus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
   </data>
   <data name="buttonTriangle.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 23</value>
@@ -297,8 +279,8 @@
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
     <value>144</value>
   </data>
-  <data name="&gt;&gt;textBoxTimer.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;buttonTriangle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btStopGoFigure.Parent" xml:space="preserve">
     <value>panelCreating</value>
@@ -319,10 +301,10 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonCircle.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;pictureBoxMain.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;buttonTriangle.Parent" xml:space="preserve">
+    <value>panelCreating</value>
   </data>
   <data name="&gt;&gt;comboBoxLanguage.Name" xml:space="preserve">
     <value>comboBoxLanguage</value>
@@ -345,26 +327,17 @@
   <data name="&gt;&gt;labelX.Parent" xml:space="preserve">
     <value>panelCreating</value>
   </data>
-  <data name="labelX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 13</value>
-  </data>
   <data name="labelY.Text" xml:space="preserve">
     <value>Y: </value>
   </data>
   <data name="&gt;&gt;buttonPlus.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;textBoxTimer.Parent" xml:space="preserve">
-    <value>panelCreating</value>
+  <data name="&gt;&gt;labelNothing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="openToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="&gt;&gt;openToolStripMenuItem.Name" xml:space="preserve">
-    <value>openToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;textBoxTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FiguresRunning</value>
   </data>
   <data name="&gt;&gt;openToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -378,23 +351,23 @@
   <data name="treeViewFigures.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="textBoxTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="buttonMinus.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
     <value>fileToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;buttonMinus.Name" xml:space="preserve">
-    <value>buttonMinus</value>
+  <data name="labelY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;buttonTriangle.Parent" xml:space="preserve">
-    <value>panelCreating</value>
+  <data name="treeViewFigures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 358</value>
+  </data>
+  <data name="buttonRectangle.Text" xml:space="preserve">
+    <value>Add Rectangle</value>
   </data>
   <data name="panelCreating.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -417,14 +390,11 @@
   <data name="buttonRectangle.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 3</value>
   </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
   </data>
-  <data name="labelNothing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
-  </data>
-  <data name="btStopGoFigure.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="buttonTriangle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 3</value>
   </data>
   <data name="labelNothing.Location" type="System.Drawing.Point, System.Drawing">
     <value>153, 46</value>
@@ -441,11 +411,11 @@
   <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
     <value>splitContainer1</value>
   </data>
+  <data name="buttonMinus.Text" xml:space="preserve">
+    <value>Minus</value>
+  </data>
   <data name="buttonCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>388, 3</value>
-  </data>
-  <data name="textBoxTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
   </data>
   <data name="buttonTriangle.Text" xml:space="preserve">
     <value>Add Triangle</value>
@@ -453,20 +423,26 @@
   <data name="&gt;&gt;comboBoxLanguage.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="textBoxTimer.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;saveInBinToolStripMenuItem.Name" xml:space="preserve">
+    <value>saveInBinToolStripMenuItem</value>
   </data>
   <data name="saveInToolStripMenuItem.Text" xml:space="preserve">
     <value>Save .json</value>
   </data>
-  <data name="buttonMinus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
+  <data name="labelNothing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
   </data>
   <data name="buttonPlus.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="&gt;&gt;labelNothing.Name" xml:space="preserve">
     <value>labelNothing</value>
+  </data>
+  <data name="&gt;&gt;btStopGoFigure.Name" xml:space="preserve">
+    <value>btStopGoFigure</value>
+  </data>
+  <data name="&gt;&gt;openbinToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="buttonCircle.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -486,14 +462,17 @@
   <data name="labelNothing.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="labelNothing.Text" xml:space="preserve">
     <value>Bump at: </value>
   </data>
-  <data name="labelY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>896, 24</value>
+  <data name="&gt;&gt;buttonMinus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonRectangle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -508,25 +487,19 @@
     <value>75, 23</value>
   </data>
   <data name="&gt;&gt;buttonRectangle.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;buttonTriangle.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FiguresRunning</value>
+  <data name="&gt;&gt;openxmlToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
-    <value>splitContainer1.Panel1</value>
-  </data>
-  <data name="buttonRectangle.Text" xml:space="preserve">
-    <value>Add Rectangle</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBoxMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="labelX.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 59</value>
@@ -537,11 +510,11 @@
   <data name="&gt;&gt;panelCreating.Name" xml:space="preserve">
     <value>panelCreating</value>
   </data>
-  <data name="pictureBoxMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;openToolStripMenuItem.Name" xml:space="preserve">
+    <value>openToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;saveInxmlToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -564,11 +537,8 @@
   <data name="&gt;&gt;buttonCircle.Parent" xml:space="preserve">
     <value>panelCreating</value>
   </data>
-  <data name="&gt;&gt;timer.Name" xml:space="preserve">
-    <value>timer</value>
-  </data>
-  <data name="buttonTriangle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 3</value>
+  <data name="treeViewFigures.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -582,41 +552,41 @@
   <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="treeViewFigures.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 358</value>
+  <data name="openToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open</value>
   </data>
   <data name="&gt;&gt;labelNothing.Parent" xml:space="preserve">
     <value>panelCreating</value>
   </data>
-  <data name="openbinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 22</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
   </data>
   <data name="&gt;&gt;labelX.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;labelNothing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <data name="openbinToolStripMenuItem.Text" xml:space="preserve">
     <value>Open .bin</value>
   </data>
-  <data name="&gt;&gt;openxmlToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;buttonPlus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btStopGoFigure.Text" xml:space="preserve">
-    <value>Stop / Go</value>
+  <data name="buttonMinus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="pictureBoxMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>748, 358</value>
+  </data>
+  <data name="&gt;&gt;buttonRectangle.Parent" xml:space="preserve">
+    <value>panelCreating</value>
   </data>
   <data name="buttonCircle.Text" xml:space="preserve">
     <value>Add Circle</value>
   </data>
-  <data name="&gt;&gt;buttonTriangle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>900, 450</value>
   </data>
   <data name="buttonPlus.Location" type="System.Drawing.Point, System.Drawing">
     <value>631, 56</value>
@@ -624,11 +594,11 @@
   <data name="&gt;&gt;saveToolStripMenuItem.Name" xml:space="preserve">
     <value>saveToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;timer.Name" xml:space="preserve">
+    <value>timer</value>
   </data>
-  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="btStopGoFigure.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;openjsonToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -645,14 +615,17 @@
   <data name="&gt;&gt;buttonMinus.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;buttonRectangle.Parent" xml:space="preserve">
-    <value>panelCreating</value>
+  <data name="saveInxmlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>File</value>
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;saveInBinToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
     <value>menuStrip1</value>
@@ -663,8 +636,8 @@
   <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
+  <data name="btStopGoFigure.Text" xml:space="preserve">
+    <value>Stop / Go</value>
   </data>
   <data name="&gt;&gt;timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -675,14 +648,14 @@
   <data name="&gt;&gt;buttonPlus.Name" xml:space="preserve">
     <value>buttonPlus</value>
   </data>
-  <data name="&gt;&gt;openbinToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;openjsonToolStripMenuItem.Name" xml:space="preserve">
+    <value>openjsonToolStripMenuItem</value>
   </data>
   <data name="buttonMinus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;openjsonToolStripMenuItem.Name" xml:space="preserve">
-    <value>openjsonToolStripMenuItem</value>
+  <data name="&gt;&gt;buttonMinus.Name" xml:space="preserve">
+    <value>buttonMinus</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

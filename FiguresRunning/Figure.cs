@@ -103,33 +103,6 @@ namespace FiguresRunning
             OnMove?.Invoke(this, new MoveEventArgs(PosX, PosY));
         }
 
-        //public void ReturnToField(Point Pmax)
-        //{
-        //    if (PosX > Pmax.X - 50)
-        //    {
-        //        PosX = Pmax.X - 50;
-        //        if (dx > 0)
-        //            dx = -dx;
-        //    }
-        //    else if (PosX < -dx)
-        //    {
-        //        dx = -dx;
-        //        PosX = dx;
-        //    }
-
-        //    if (PosY > Pmax.Y - 50)
-        //    {
-        //        PosY = Pmax.Y - 50;
-        //        if (dy > 0)
-        //            dy = -dy;
-        //    }
-        //    else if (PosY < -dy)
-        //    {
-        //        dy = -dy;
-        //        PosY = dy;
-        //    }
-        //}
-
         public void ReturnToField(Point Pmax)
         {
             if(PosX > Pmax.X + dx - 50)

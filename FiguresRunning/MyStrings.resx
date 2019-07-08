@@ -120,11 +120,38 @@
   <data name="Circle" xml:space="preserve">
     <value>Circle </value>
   </data>
+  <data name="File" xml:space="preserve">
+    <value>File</value>
+  </data>
   <data name="Go" xml:space="preserve">
     <value>Go</value>
   </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="OpenBIN" xml:space="preserve">
+    <value>Open .bin</value>
+  </data>
+  <data name="OpenJSON" xml:space="preserve">
+    <value>Open .json</value>
+  </data>
+  <data name="OpenXML" xml:space="preserve">
+    <value>Open .xml</value>
+  </data>
   <data name="Rectangle" xml:space="preserve">
     <value>Rectangle </value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveBIN" xml:space="preserve">
+    <value>Save in .bin</value>
+  </data>
+  <data name="SaveJSON" xml:space="preserve">
+    <value>Save in .json</value>
+  </data>
+  <data name="SaveXML" xml:space="preserve">
+    <value>Save in .xml</value>
   </data>
   <data name="Stop" xml:space="preserve">
     <value>Stop</value>

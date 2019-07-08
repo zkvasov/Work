@@ -17,10 +17,6 @@ namespace FiguresRunning
         //public Pen figPen = new Pen(Color.Red);
         [DataMember]
         public override string Name { get; set; }
-        //[DataMember]
-        //public override int PosX { get; set; }
-        //[DataMember]
-        //public override int PosY { get; set; }
         [DataMember]
         public int Diametr { get; set; }                //надо ли???
 
@@ -43,15 +39,7 @@ namespace FiguresRunning
         public override void Draw(Graphics g)
         {
             g.DrawEllipse(new Pen(Color.Red), new Rectangle(PosX, PosY, Diametr, Diametr));
-            //myPen.Dispose();
-            //g.Dispose();
         }
 
-        //public override TreeNode AddNode(List<Figure> allFigures, int countFigure)
-        //{
-        //    TreeNode figureNode = new TreeNode(MyStrings.Circle + countFigure.ToString());
-        //    figureNode.Tag = allFigures[countFigure - 1];
-        //    return figureNode;
-        //}
     }
 }

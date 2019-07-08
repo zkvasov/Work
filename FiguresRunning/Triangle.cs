@@ -17,10 +17,6 @@ namespace FiguresRunning
         // public System.Drawing.Pen figPen = new System.Drawing.Pen(System.Drawing.Color.Green);
         [DataMember]
         public override string Name { get; set; }
-        //[DataMember]
-        //public override int PosX { get; set; }
-        //[DataMember]
-        //public override int PosY { get; set; }
         [DataMember]
         public int Width { get; set; }                //надо ли???
         [DataMember]
@@ -54,19 +50,8 @@ namespace FiguresRunning
                 new Point(PosX + Width/2, PosY ),
                 new Point(PosX , PosY + Height)
             };
-            //System.Drawing.Graphics g;
-            //g = e.Graphics;
+
             g.DrawLines(new Pen(Color.Green), points);
-           // myPen.Dispose();
-            //g.Dispose();
         }
-
-
-        //public override TreeNode AddNode(List<Figure> allFigures, int countFigure)                  //не здесь ей место
-        //{
-        //    TreeNode figureNode = new TreeNode(MyStrings.Triangle + countFigure.ToString());
-        //    figureNode.Tag = allFigures[countFigure - 1];
-        //    return figureNode;
-        //}
     }
 }
