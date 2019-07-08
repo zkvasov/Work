@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Runtime.Serialization;
 using RandomForFigures;
 
@@ -113,21 +108,22 @@ namespace FiguresRunning
                 }
                 PosX = Pmax.X - 50;
             }
-            else if(PosY > Pmax.Y + dy - 50)
+            else if (PosX < dx)
+            {
+                if (dx < 0)
+                {
+                    dx = -dx;
+                }
+                PosX = 0;
+            }
+
+            if (PosY > Pmax.Y + dy - 50)
             {
                 if(dy > 0)
                 {
                     dy = -dy;
                 }
                 PosY = Pmax.Y  -50;
-            }
-            else if(PosX < dx)
-            {
-                if(dx < 0)
-                {
-                    dx = -dx;
-                }
-                PosX = 0;
             }
             else if(PosY < dy)
             {
