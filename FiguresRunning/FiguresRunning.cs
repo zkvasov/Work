@@ -95,8 +95,7 @@ namespace FiguresRunning
                 }
 
             }
-
-            Invalidate();
+            //Invalidate();
         }
 
         private void buttonTriangle_Click(object sender, EventArgs e)
